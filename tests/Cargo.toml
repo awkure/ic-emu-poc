@@ -1,0 +1,9 @@
+[package]
+name = "tests"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+canister-a = { path = "../canister-a" }
+canister-b = { path = "../canister-b" }
+types = { path = "../types" }

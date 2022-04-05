@@ -1,0 +1,23 @@
+{
+  "canisters": {
+    "canister-a": {
+      "build": "bash scripts/build.sh",
+      "candid": "candid/canister-a.did",
+      "wasm": "target/wasm32-unknown-unknown/release/canister-a-opt.wasm",
+      "type": "custom"
+    },
+    "canister-b": {
+      "build": "bash scripts/build.sh",
+      "candid": "candid/canister-b.did",
+      "wasm": "target/wasm32-unknown-unknown/release/canister-b-opt.wasm",
+      "type": "custom"
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "localhost:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}

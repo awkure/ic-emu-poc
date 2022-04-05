@@ -1,0 +1,14 @@
+[workspace]
+members = [
+  "canister-a",
+  "canister-b",
+  "types",
+  "tests",
+]
+
+[profile.release]
+codegen-units = 1
+debug = false
+debug-assertions = false
+lto = true
+panic = "abort"
